@@ -1,3 +1,9 @@
+These basic first steps will get you up and running with a headless setup. 
+-Static IP
+-SSH
+-VNC
+-Samba
+
 Open Terminal:
 1) sudo apt update
 2) sudo apt upgrade
@@ -37,4 +43,18 @@ SSH Into RPi
      su - pi -c '/usr/bin/tightvncserver :1'
 8.2) sudo reboot
 
-VNC Into RPi
+9) sudo apt install samba 
+9.1) sudo ufw allow (137, 138, 139, 445)
+9.2) sudo mkdir -m 1777 /home/pi/Shared
+9.3) sudo nano /etc/samba/smb.conf
+     [share]
+     Comment = Pi shared folder
+     Path = /home/pi/Shared
+     Browseable = yes
+     Writeable = Yes
+     only guest = no
+     create mask = 0777
+     directory mask = 0777
+     Public = yes
+     Guest ok = yes
+
