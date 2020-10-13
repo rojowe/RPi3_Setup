@@ -1,6 +1,8 @@
 //Update and Upgrade First 
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt update
+sudo apt upgrade
+sudo apt dist-upgrade
+
 
 //DO NOT USE apt-get install arduino ... its old and out of date...instead, extract it from the webpage with 
 
@@ -9,7 +11,7 @@ cd ~/Downloads
 wget https://downloads.arduino.cc/arduino-1.8.10-linuxarm.tar.xz
 
 //extract folder (-x extract, -f creates file with extract name)
-tar -x -f arduino-1.8.5-linuxarm.tar.xz
+tar -x -f arduino-1.8.10-linuxarm.tar.xz
 
 //Install Arduino IDE with installation script
 ./install.sh
