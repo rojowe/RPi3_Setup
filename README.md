@@ -5,6 +5,7 @@
     <li>Static IP</li>
     <li>SSH</li>
     <li>VNC</li>
+    <li>UFW Firewall</li>
   </ul>
 </p>
 
