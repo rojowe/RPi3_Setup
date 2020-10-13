@@ -45,11 +45,11 @@
 </p>
 
 <p>
-  SSH Into RPi
+  Install firewall UFW
   <ul>
     <li>sudo apt install ufw</li>
     <li>sudo ufw allow 22</li>
-    <li>sudo ufw allow 5901</li>
+    <li>sudo ufw allow 5900</li>
     <li>sudo ufw enable</li>
   </ul>
 </p>
@@ -58,40 +58,5 @@
   <ul>
     <li>sudo apt install fail2ban</li> 
     <li>sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local</li>
-  </ul>
-</p>
-
-<p>
-  <ul>
-    <li>sudo apt install tightvncserver 
-    <li>sudo nano /etc/rc.local</li>
-        <ul>
-          <li>below "fi"</li>
-          <li>#start VNCserver @ boot</li>
-          <li>su - pi -c '/usr/bin/tightvncserver :1'</li>
-        </ul>
-    <li>sudo reboot</li>
-  </ul>
-</p>
-
-<p>
-  <ul>
-    <li>sudo apt install samba</li> 
-    <li>sudo ufw allow (137, 138, 139, 445)</li>
-    <li>sudo mkdir -m 1777 /home/pi/Shared</li>
-    <li>sudo nano /etc/samba/smb.conf</li>
-     <ul>
-       <li>[share]</li>
-       <li>Comment = Pi shared folder<\n>
-       <li>Path = /home/pi/Shared<\n>
-       <li>Browseable = yes<\n>
-       <li>Writeable = Yes<\n>
-       <li>only guest = no<\n>
-       <li>create mask = 0777<\n>
-       <li>directory mask = 0777<\n>
-       <li>Public = yes<\n>
-       <li>Guest ok = yes<\n>
-     </ul>
-    <li>sudo reboot</li>
   </ul>
 </p>
