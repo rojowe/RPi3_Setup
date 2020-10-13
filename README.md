@@ -1,4 +1,4 @@
-# RPi3_Setup
+# RPi3_Clean_Install_Setup
 <p>
   These basic first steps will get you up and running with a headless setup. 
   <ul>
