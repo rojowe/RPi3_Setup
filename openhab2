@@ -5,6 +5,8 @@ sudo apt-get install mc git htop
 
 //Install Java 8
 java -version //no java found
+sudo apt install openjdk-8-jdk
+java -version 1.8.0_212
 
 
 //Get apt distribution link 
@@ -16,3 +18,13 @@ echo 'deb https://dl.bintray.com/openhab/apt-repo2 stable main' | sudo tee /etc/
 sudo apt-get update
 sudo apt install openhab2
 sudo apt install openhab2-addons
+
+# Start openhab2 service
+sudo systemctl start openhab2.service
+
+# Learn about the current service status
+sudo systemctl status openhab2.service
+
+# Make openHAB automatically start after booting the Linux host
+sudo systemctl daemon-reload
+sudo systemctl enable openhab2.service
