@@ -1,1 +1,18 @@
 //openhab2 Manual Install
+
+//Some helpful apps
+sudo apt-get install mc git htop
+
+//Install Java 8
+java -version //no java found
+
+
+//Get apt distribution link 
+wget -qO - 'https://bintray.com/user/downloadSubjectPublicKey?username=openhab' | sudo apt-key add -
+sudo apt-get install apt-transport-https
+echo 'deb https://dl.bintray.com/openhab/apt-repo2 stable main' | sudo tee /etc/apt/sources.list.d/openhab2.list
+
+//Update dist list & Install openhab2 and addons 
+sudo apt-get update
+sudo apt install openhab2
+sudo apt install openhab2-addons
