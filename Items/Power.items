@@ -1,0 +1,9 @@
+//Power.items 
+
+//Battery Bank Items 
+Number Battery_Voltage "Battery Voltage [%.1f V]" <energy>
+
+//Solar Power Items
+Number Solar_Voltage "Solar Voltage [%.1f V]" <energy>
+
+
