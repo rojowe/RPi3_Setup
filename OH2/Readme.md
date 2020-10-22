@@ -1,7 +1,9 @@
 <h3>openHAB2 Setup</h3>
 
 <b>Features</b>
+- Home Automation Server
 - MQTT Server
+- 
 
 Installation Instructions
 
