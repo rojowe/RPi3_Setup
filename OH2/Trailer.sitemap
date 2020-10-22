@@ -1,0 +1,27 @@
+sitemap trailer label="Trailer"
+{
+  Frame label="Main Power"
+  {
+    Frame label="Battery Bank"
+    {
+      Text item=Battery_Status  label="Battery Status [%s]"      <energy> //{ channel="mqtt binding" } [map %s = "Charging", "Discharging", "Full", "Danger!"]
+      Text item=Battery_Voltage label="Battery Voltage [%.1f V]" <energy> //{ channel="mqtt binding" }
+    }
+    Frame label="Power Input"
+    {
+      Text item=Power_Status label="Mode [%s]" <energy> //{ channel= "mqtt binding" } [map %s = "Battery Bank", "Solar Charging", "Shore Power"] 
+    }
+    Frame label="Mains Power"
+    {
+      Text item=Mains_Status
+    }
+    Frame label="Solar Power"
+    {
+      Text item=Solar_Voltage
+    }
+    Frame label="Generator Power"
+    {
+      Text item=Generator_Status
+    }
+  }
+}
