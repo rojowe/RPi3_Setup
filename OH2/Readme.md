@@ -4,6 +4,7 @@
 - MQTT Server
 
 Installation Instructions
+
 //Step 1
 wget -qO - 'https://bintray.com/user/downloadSubjectPublicKey?username=openhab' | sudo apt-key add -
 
