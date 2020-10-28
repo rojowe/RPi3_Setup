@@ -29,4 +29,5 @@
 <h3>Make Desktop Shortcut Execute on Click or just use the menu icon</h3>
 <ul>
   <li>chmod +x <filename> ????</li>
+  <li>or just delete the desktop icon
 </ul>
