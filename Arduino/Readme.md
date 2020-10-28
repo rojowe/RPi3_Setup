@@ -23,7 +23,7 @@
 
 <h3>Install Arduino IDE with Install Script</h3>
 <ul>
-  <li>./install.sh</li>
+  <li>sudo ./install.sh</li>
 </ul>
   
 <h3>Make Desktop Shortcut Execute on Click or just use the menu icon</h3>
