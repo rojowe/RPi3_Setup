@@ -20,7 +20,7 @@
   <li>tar -x -f arduino-1.8.10-linuxarm.tar.xz</li>
 </ul>
 
-<b>Install Arduino IDE with installation script
+<b>Install Arduino IDE with installation script</b>
 <ul>
   <li>./install.sh</li>
 </ul>
